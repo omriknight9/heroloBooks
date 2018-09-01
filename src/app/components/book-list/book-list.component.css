@@ -1,0 +1,45 @@
+
+.container {
+	widows: 100%;
+	display: flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+
+.book {
+	width: 20%;
+	margin-top: 1rem;
+	text-align: center;
+	background-color: lightgrey;
+	border:  1px solid black;
+}
+
+.book img {
+	margin-top: 1rem;
+	width: 150px;
+	height: 200px;
+}
+
+.book button {
+	margin: .7rem;
+}
+
+@media screen and (max-width: 767px) {
+	.book {
+		width: 60%;
+		transition: .5s;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.book img {
+		width: 120px;
+		height: 150px;
+	}
+}
+
+
+
+

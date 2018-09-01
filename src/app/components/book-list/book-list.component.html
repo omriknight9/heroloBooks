@@ -1,0 +1,13 @@
+
+<div *ngIf="book">
+	<div class="container">
+		<div *ngFor="let book of book.items" class="book">
+			<img src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+			<p>Title: {{book.volumeInfo.title}}</p>
+			<p>Author: {{book.volumeInfo.authors}}</p>
+			<p>Published Date: {{book.volumeInfo.publishedDate}}</p>
+			<button mat-raised-button color="primary" (click)="openDialog($event)">Edit</button>
+			<button mat-raised-button color="warn">Delete</button>
+		</div>
+	</div>
+</div>
