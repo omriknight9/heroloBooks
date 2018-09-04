@@ -20,7 +20,7 @@ export class BookListComponent {
   	}
 
   	openDialog(e) {
-
+        console.log(e.target);
   	    const dialogConfig = new MatDialogConfig();
       	for (var i = 0; i < this.book.items.length; ++i) {
 	  		dialogConfig.data = {
